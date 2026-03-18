@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/SebastianHofmiller/Downloads/K1-3_Laplace_6.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>K1-3 · Laplace · 8I</title><link href="./K1-3 · Laplace · 8I_files/css2" rel="stylesheet">
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #F0EDE8; font-family: 'Nunito', sans-serif; font-size: 13px; color: #1a1a1a; line-height: 1.65; padding: 30px 20px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+.page { width: 210mm; min-height: 297mm; background: #fff; margin: 0 auto 40px; padding: 14mm 17mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.10); display: flex; flex-direction: column; position: relative; }
+.kat-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; display: flex; align-items: center; gap: 5px; }
+.kat-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; background: rgba(255,255,255,0.7); border-radius: 50%; }
+.kat-badge.k1 { background: #1C5F96; }
+.sequenz-badge { font-family: 'Nunito', sans-serif; font-size: 10.5px; font-weight: 700; color: #5A5A5A; text-transform: uppercase; letter-spacing: .10em; text-align: center; margin-bottom: 3px; }
+.pg-title { text-align: center; font-family: 'Lora', serif; font-size: 19px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+.datum-row { display: flex; justify-content: flex-end; align-items: center; gap: 8px; font-size: 11.5px; font-family: 'Nunito', sans-serif; color: #666; margin-bottom: 14px; }
+.datum-row .ln-d { border-bottom: 1px solid #aaa; display: inline-block; width: 85px; height: 13px; }
+.klasse-tag { font-size: 11px; font-weight: 700; color: #444; border: 1px solid #bbb; border-radius: 20px; padding: 1px 9px; margin-left: 6px; }
+.tape-tl, .tape-tr { position: absolute; width: 36px; height: 20px; background: rgba(235,222,175,0.90); filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.55)); clip-path: polygon(0% 0%,9% 20%,2% 45%,10% 70%,3% 90%,0% 100%,100% 100%,97% 80%,100% 55%,91% 30%,98% 10%,92% 0%); }
+.tape-tl { top: -4px; left: -2px; transform: rotate(-38deg); }
+.tape-tr { top: -4px; right: -2px; transform: rotate(38deg); }
+.tape-box { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 13px 14px 11px; margin-bottom: 16px; font-family: 'Lora', serif; font-size: 12.5px; line-height: 1.68; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.bsp-label { font-family: 'Lora', serif; font-size: 12px; font-weight: 700; font-style: italic; color: #5A4A00; margin-top: 7px; margin-bottom: 2px; }
+.def-tape { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 10px 13px; margin-bottom: 15px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.def-row { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px dashed #D0C898; font-family: 'Nunito', sans-serif; font-size: 12.5px; }
+.def-row:last-child { border-bottom: none; padding-bottom: 0; }
+.def-left { width: 68px; flex-shrink: 0; text-align: center; font-family: 'Caveat', cursive; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.def-left small { display: block; font-family: 'Nunito', sans-serif; font-size: 10px; font-weight: 700; color: #666; }
+.merk-box { position: relative; background: #FFFDE6; border: 1.5px solid #E8D84A; border-radius: 5px; padding: 15px 13px 12px; margin-bottom: 15px; font-family: 'Lora', serif; font-size: 12.5px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.merk-box .tape-tl, .merk-box .tape-tr { all: unset; position: absolute; width: 15px; height: 22px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 32'%3E%3Ccircle cx='11' cy='11' r='9.5' fill='%23E8821A' stroke='%231a1a1a' stroke-width='2'/%3E%3Crect x='10' y='19' width='2' height='11' rx='1' fill='%23999'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: contain; top: -12px; }
+.merk-box .tape-tl { left: 14px; transform: rotate(-28deg); } .merk-box .tape-tr { right: 14px; transform: rotate(28deg); }
+.merk-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; font-style: italic; color: #6B5A00; margin-bottom: 4px; text-decoration: underline; text-underline-offset: 3px; }
+.tipp-box { background: #F0F7FF; border: 1.5px solid #88BBE0; border-left: 4px solid #5599CC; border-radius: 5px; padding: 9px 12px 9px 34px; margin: 9px 0; font-family: 'Nunito', sans-serif; font-size: 12px; color: #1A3A5C; position: relative; }
+.tipp-box::before { content: '💡'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); }
+.sec-hdr { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 18px 0 11px; padding: 4px 0 4px 11px; border-left: 4px solid #1C5F96; border-bottom: 1px solid #E0DDD5; display: block; }
+.auf { margin-bottom: 18px; }
+.auf-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+.auf-label::before { content: ''; display: inline-block; width: 9px; height: 18px; background: #E8821A; border-radius: 2px; flex-shrink: 0; }
+.sterne { margin-left: auto; font-size: 11px; flex-shrink: 0; }
+.sterne.s1 { color: #1A7A50; } .sterne.s2 { color: #CF7C09; } .sterne.s3 { color: #A31515; }
+.auf-body { font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.75; }
+.teil { display: flex; gap: 7px; margin-top: 8px; font-size: 12.5px; align-items: flex-start; }
+.tn { font-weight: 700; color: #555; min-width: 21px; flex-shrink: 0; }
+.ll { display: flex; flex-direction: column; gap: 30px; margin-top: 10px; }
+.ll .l { border-bottom: 1px solid #bbb; width: 100%; }
+.ln { border-bottom: 1px solid #aaa; display: inline-block; min-width: 80px; height: 14px; vertical-align: bottom; }
+.draw-box { border: 1.5px dashed #bbb; border-radius: 4px; background-color: #FAFAFA; background-image: radial-gradient(circle, #ccc 1px, transparent 1px); background-size: 12px 12px; color: #bbb; font-size: 11px; margin-top: 7px; font-style: italic; position: relative; }
+.luecke { display: inline-block; border-bottom: 1.5px solid #C8A800; min-width: 70px; height: 16px; vertical-align: bottom; margin: 0 3px; }
+.formel-blau { background: #EEF6FD; border: 1.5px solid #88BBE0; border-radius: 5px; padding: 9px 14px; margin: 8px 0; text-align: center; font-family: 'Lora', serif; font-size: 13.5px; font-weight: 700; color: #1A3A5C; }
+.regel-box { border: 1.5px solid #1C5F96; border-radius: 6px; padding: 10px 13px; margin-bottom: 10px; background: #F5F9FF; }
+.regel-titel { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: #1C5F96; margin-bottom: 4px; }
+.mt-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.mt-tbl th { background: #1C5F96; color: white; font-weight: 700; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl td { border: 1px solid #C8D8E8; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl tr:nth-child(even) td { background: #F5F8FF; }
+.mt-tbl td.fill { background: #EEF6FD; }
+.seiten-nr { font-family: 'Nunito', sans-serif; font-size: 9px; color: #bbb; text-align: center; margin-top: auto; padding-top: 10px; }
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  body { background: white !important; padding: 0 !important; margin: 0 !important; }
+  .page { box-shadow: none !important; margin: 0 !important; page-break-after: always !important; break-after: page !important; width: 210mm !important; height: 297mm !important; min-height: 0 !important; overflow: hidden !important; padding: 12mm 15mm 10mm !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
+/* ── EXPERIMENT-BLOCK · Master Design · warm orange ── */
+.exp-block {
+  position: relative;
+  background: #FFF5EB;
+  border: 1.5px solid #D4892A;
+  border-left: 4px solid #E8821A;
+  border-radius: 5px;
+  padding: 13px 14px 12px 14px;
+  margin: 13px 0;
+  box-shadow: 3px 4px 0px rgba(0,0,0,.07);
+}
+.exp-pin-tl, .exp-pin-tr {
+  all: unset;
+  position: absolute;
+  width: 15px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 32'%3E%3Ccircle cx='11' cy='11' r='9.5' fill='%23E8821A' stroke='%231a1a1a' stroke-width='2'/%3E%3Ccircle cx='7.5' cy='7' r='2.5' fill='rgba(255,255,255,0.45)'/%3E%3Crect x='10' y='19' width='2' height='11' rx='1' fill='%23999'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -12px;
+}
+.exp-pin-tl { left: 18px; transform: rotate(-22deg); }
+.exp-pin-tr { right: 18px; transform: rotate(22deg); }
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #D4892A;
+}
+.exp-icon-wrap {
+  width: 36px;
+  height: 36px;
+  background: #E8821A;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+}
+.exp-meta { flex: 1; }
+.exp-seq-label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  color: #A05A10;
+  margin-bottom: 1px;
+}
+.exp-title {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5A2E00;
+}
+.exp-badges { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+.exp-badge {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 20px;
+  border: 1px solid #D4892A;
+  color: #7A3E00;
+  background: #FFF0DC;
+}
+.exp-badge.mat {
+  background: #E8821A;
+  color: white;
+  border-color: #C06010;
+}
+.exp-body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12.5px;
+  color: #3A2000;
+  line-height: 1.68;
+}
+.exp-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 8px 0 6px;
+}
+.exp-tbl th {
+  background: #E8821A;
+  color: white;
+  font-weight: 700;
+  padding: 5px 7px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+.exp-tbl td {
+  border: 1px solid #D4892A;
+  padding: 6px 7px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #3A2000;
+}
+.exp-tbl td.strich {
+  background: #FDFAF0;
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  min-height: 26px;
+}
+.exp-tbl td.fill { background: #FFF0DC; }
+.exp-bruecke {
+  margin-top: 10px;
+  padding: 8px 11px;
+  background: #FFE8C8;
+  border-radius: 4px;
+  border-left: 3px solid #E8821A;
+  font-family: 'Lora', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #5A2E00;
+  line-height: 1.6;
+}
+.exp-bruecke strong {
+  font-style: normal;
+  color: #C06010;
+}
+
+/* ── BRÜCHE ── */
+.b { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; line-height: 1.15; margin: 0 2px; font-size: 0.9em; }
+.b .z { border-bottom: 1.3px solid currentColor; padding: 0 3px; text-align: center; display: block; white-space: nowrap; }
+.b .n { padding: 0 3px; text-align: center; display: block; white-space: nowrap; }
+
+
+.loe-antwort { background: #E8F5EE; border: 1.5px solid #1A7A50; border-radius: 5px; padding: 10px 13px; margin: 5px 0; font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.75; }
+.loe-hinweis { font-family: 'Lora', serif; font-size: 11.5px; font-style: italic; color: #555; border-left: 3px solid #A8D4B8; padding-left: 9px; margin: 6px 0 0; line-height: 1.6; }
+.sol { font-weight: 700; color: #0D5C35; }
+.loe-sol { color: #A31515; font-weight: 700; }
+.exp-hinweis { background: #FFF5EB; border: 1.5px solid #D4892A; border-left: 4px solid #E8821A; border-radius: 5px; padding: 9px 13px; margin: 5px 0 10px; font-family: 'Nunito', sans-serif; font-size: 12px; color: #5A2E00; line-height: 1.65; }
+.loe-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.loe-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; background: #1A7A50; }
+.pg-sub { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; color: #1A7A50; font-style: italic; margin-bottom: 14px; }
+
+/* Lösungsblatt-Seite */
+.page-loe { border-top: 5px solid #1A7A50; }
+.page-loe .sec-hdr { border-left-color: #1A7A50; }
+.page-loe .auf-label::before { background: #1A7A50; }
+</style>
+</head>
+<body><svg style="position:absolute;width:0;height:0;"><defs><filter id="wavy" x="-3%" y="-8%" width="106%" height="116%"><feturbulence type="fractalNoise" baseFrequency="0.020 0.030" numOctaves="2" seed="5" result="noise"></feturbulence><fedisplacementmap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"></fedisplacementmap></filter></defs></svg>
+<div class="page" data-kat="k1">
+  <div class="kat-badge k1">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Laplace-Wahrscheinlichkeit</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+  <div class="tape-box">
+    <span class="tape-tl"></span><span class="tape-tr"></span>
+    Du wirfst einen fairen Würfel. Wie groß ist die Wahrscheinlichkeit, eine 6 zu würfeln? Kannst du das berechnen — <strong>ohne einen einzigen Wurf zu machen?</strong>
+    <div style="margin-top:7px;font-family:&#39;Nunito&#39;,sans-serif;font-size:12px;">💬 Meine Vermutung: P(6) = <span class="ln" style="min-width:60px;"></span> &nbsp;&nbsp; P(gerade) = <span class="ln" style="min-width:60px;"></span></div>
+  </div>
+  <div class="sec-hdr">Die Laplace-Wahrscheinlichkeit</div>
+  <div class="def-tape">
+    <span class="tape-tl"></span><span class="tape-tr"></span>
+    <div class="def-row">
+      <div class="def-left">⚖️<small>Laplace</small></div>
+      <div>Die <strong>Laplace-Bedingung</strong> ist erfüllt, wenn alle Ergebnisse <strong>gleich wahrscheinlich</strong> sind.</div>
+    </div>
+    <div class="def-row">
+      <div class="def-left">P(E)<small>Formel</small></div>
+      <div><div class="formel-blau" style="font-size:13px;text-align:left;padding:6px 12px;margin:4px 0;">P(E) = <span class="b"><span class="z">|E|</span><span class="n">|Ω|</span></span></div>
+        P(∅) = 0 &nbsp;·&nbsp; P(Ω) = 1 &nbsp;·&nbsp; 0 ≤ P(E) ≤ 1</div>
+    </div>
+    <div class="def-row">
+      <div class="def-left">P(Ē)<small>Gegen­ereignis</small></div>
+      <div>Ē = alle Ergebnisse, die <em>nicht</em> in E liegen: <strong>P(Ē) = 1 − P(E)</strong></div>
+    </div>
+  </div>
+  <div class="auf">
+    <div class="auf-label">Aufgabe 1: Würfelwurf<span class="sterne s1">★</span></div>
+    <div class="auf-body">
+      Ω = {1,2,3,4,5,6}:
+      <div class="teil"><span class="tn">a)</span><span>P(5) = <span class="ln" style="min-width:60px;"></span> &nbsp; b) P(ungerade) = <span class="ln" style="min-width:60px;"></span> &nbsp; c) P(&gt;4) = <span class="ln" style="min-width:60px;"></span> &nbsp; d) P(nicht 5) = <span class="ln" style="min-width:60px;"></span></span></div>
+    </div>
+  </div>
+  <div class="auf">
+    <div class="auf-label">Aufgabe 2: Skatspiel (32 Karten)<span class="sterne s1">★</span></div>
+    <div class="auf-body">
+      4 Farben × 8 Werte. Eine Karte zufällig ziehen.
+      <div class="teil"><span class="tn">a)</span><span>P(Ass) = <span class="ln"></span> &nbsp; b) P(Kreuz) = <span class="ln"></span> &nbsp; c) P(Bube/Dame/König) = <span class="ln"></span> &nbsp; d) P(kein Ass) = <span class="ln"></span></span></div>
+    </div>
+  </div>
+
+  <div class="exp-block">
+    <span class="exp-pin-tl"></span><span class="exp-pin-tr"></span>
+    <div class="exp-header">
+      <div class="exp-icon-wrap">🎲</div>
+      <div class="exp-meta">
+        <div class="exp-seq-label">Experiment · ca. 8 Min.</div>
+        <div class="exp-title">Je mehr Seiten — desto kleiner P</div>
+        <div class="exp-badges">
+          <span class="exp-badge">👨‍👩‍👧 3 Gruppen</span>
+          <span class="exp-badge mat">W4 · W6 · W12</span>
+        </div>
+      </div>
+    </div>
+    <div class="exp-body" style="margin-top:10px;">
+      Jede Gruppe bekommt einen anderen Würfel und wirft <strong>20-mal</strong>. Zählt, wie oft die Seite <strong>1</strong> erscheint.
+      <table class="exp-tbl" style="margin-top:8px;">
+        <thead><tr><th>Gruppe</th><th>Würfel</th><th>|Ω|</th><th>Anzahl „1"</th><th>h(1) = <span class="b"><span class="z">Anzahl</span><span class="n">20</span></span></th><th>P<sub>theo</sub>(1)</th></tr></thead>
+        <tbody>
+          <tr><td>A</td><td><strong>W4</strong></td><td class="fill">4</td><td class="strich"></td><td class="fill"></td><td class="fill"><span class="b"><span class="z">1</span><span class="n">4</span></span> = 0,25</td></tr>
+          <tr><td>B</td><td><strong>W6</strong></td><td class="fill">6</td><td class="strich"></td><td class="fill"></td><td class="fill"><span class="b"><span class="z">1</span><span class="n">6</span></span> ≈ 0,17</td></tr>
+          <tr><td>C</td><td><strong>W12</strong></td><td class="fill">12</td><td class="strich"></td><td class="fill"></td><td class="fill"><span class="b"><span class="z">1</span><span class="n">12</span></span> ≈ 0,08</td></tr>
+        </tbody>
+      </table>
+      Tragt die Ergebnisse der anderen Gruppen ein, sobald sie fertig sind.
+    </div>
+    <div class="exp-bruecke">
+      <strong>Muster:</strong> Was passiert mit P(1), wenn |Ω| größer wird? Kannst du die Formel P(eine bestimmte Seite) = … selbst aufschreiben?
+    </div>
+  </div>
+
+  <div class="seiten-nr">8I · Daten und Zufall · Einführung</div>
+</div>
+
+<div class="page" data-kat="k1">
+  <div class="kat-badge k1">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Laplace-Wahrscheinlichkeit</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+  <div class="auf">
+    <div class="auf-label">Aufgabe 3: Laplace-Bedingung prüfen<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      Ist die Laplace-Bedingung erfüllt? Begründe kurz!
+      <div class="teil"><span class="tn">a)</span><span>Fairer Würfel.</span></div>
+      <div class="ll" style="margin-bottom:7px;"><div class="l"></div></div>
+      <div class="teil"><span class="tn">b)</span><span>Morgen scheint die Sonne — oder nicht.</span></div>
+      <div class="ll" style="margin-bottom:7px;"><div class="l"></div></div>
+      <div class="teil"><span class="tn">c)</span><span>Beutel: 3 rote und 7 blaue Kugeln — eine wird gezogen.</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+  <div class="auf">
+    <div class="auf-label">Aufgabe 4: Gegenereignis klug nutzen<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      <div class="tipp-box">Wenn P(E) schwer zu berechnen ist: P(E) = 1 − P(Ē) — das Gegenereignis ist oft einfacher!</div>
+      <div class="teil"><span class="tn">a)</span><span>Würfelwurf: P(keine 1) = <span class="ln"></span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>Zweimaliger Münzwurf: P(mind. 1 Kopf) über Gegenereignis:<br>
+        P(Z,Z) = <span class="ln" style="min-width:60px;"></span> &nbsp;→&nbsp; P(mind. 1K) = <span class="ln" style="min-width:70px;"></span></span></div>
+    </div>
+  </div>
+  <div class="auf">
+    <div class="auf-label">Aufgabe 5: Eigenes Experiment erfinden<span class="sterne s3">★★★</span></div>
+    <div class="auf-body">
+      Wähle einen Würfel aus dem Kasten. Gib Ω, ein Ereignis E und berechne P(E) und P(Ē).
+      <div class="ll"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+    </div>
+  </div>
+  <div class="merk-box">
+    <span class="tape-tl"></span><span class="tape-tr"></span>
+    <div class="merk-label">Merksatz: Laplace-Wahrscheinlichkeit</div>
+    Wenn alle Ergebnisse gleich wahrscheinlich sind: P(E) = <span class="b"><span class="z"><span class="luecke" style="min-width:50px;display:inline-block;"></span></span><span class="n"><span class="luecke" style="min-width:50px;display:inline-block;"></span></span></span>
+    &nbsp;&nbsp; P(Ē) = <span class="luecke" style="min-width:90px;"></span>
+  </div>
+  <div class="seiten-nr">8I · Daten und Zufall · Einführung</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     LÖSUNGSBLATT — nur für den Lehrer
+     ═══════════════════════════════════════════════════ -->
+<svg style="position:absolute;width:0;height:0;"><defs><filter id="wavy" x="-3%" y="-8%" width="106%" height="116%"><feturbulence type="fractalNoise" baseFrequency="0.020 0.030" numOctaves="2" seed="5" result="noise"></feturbulence><fedisplacementmap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"></fedisplacementmap></filter></defs></svg>
+<div class="page page-loe">
+  <div class="loe-badge">✔ Lösungsblatt</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Laplace-Wahrscheinlichkeit — Lösungsblatt</div>
+  <div class="pg-sub">Lösungsblatt · nur für den Lehrer · nicht für Schüler</div>
+
+  <div class="exp-hinweis">
+    <strong>Experiment „Je mehr Seiten — desto kleiner P" (3 Gruppen: W4/W6/W12, je 20×):</strong> Erwartete Anzahl „1": W4 ≈ 5×, W6 ≈ 3×, W12 ≈ 2×. Muster direkt sichtbar: h(1) ≈ <span class="b"><span class="z">1</span><span class="n">|Ω|</span></span>. Die Formel bestätigt, was die Kinder gerade gemessen haben.
+  </div>
+
+  <div class="sec-hdr">Seite 1</div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 1: Würfelwurf<span class="sterne s1">★</span></div>
+    <div class="loe-antwort">
+      <div class="teil"><span class="tn">a)</span><span>P(5) = <span class="sol"><span class="b"><span class="z">1</span><span class="n">6</span></span> ≈ 0,17</span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>E = {1,3,5} → P(ungerade) = <span class="sol"><span class="b"><span class="z">3</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span> = 0,5</span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>E = {5,6} → P(&gt;4) = <span class="sol"><span class="b"><span class="z">2</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">3</span></span> ≈ 0,33</span></span></div>
+      <div class="teil"><span class="tn">d)</span><span>P(nicht 5) = 1 − <span class="b"><span class="z">1</span><span class="n">6</span></span> = <span class="sol"><span class="b"><span class="z">5</span><span class="n">6</span></span> ≈ 0,83</span></span></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 2: Skatspiel (32 Karten)<span class="sterne s1">★</span></div>
+    <div class="loe-antwort">
+      <div class="teil"><span class="tn">a)</span><span>4 Asse in 32 Karten → P(Ass) = <span class="sol"><span class="b"><span class="z">4</span><span class="n">32</span></span> = <span class="b"><span class="z">1</span><span class="n">8</span></span> = 0,125</span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>8 Kreuzkarten → P(Kreuz) = <span class="sol"><span class="b"><span class="z">8</span><span class="n">32</span></span> = <span class="b"><span class="z">1</span><span class="n">4</span></span> = 0,25</span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>4 Farben × 3 Bildkarten = 12 → P(B/D/K) = <span class="sol"><span class="b"><span class="z">12</span><span class="n">32</span></span> = <span class="b"><span class="z">3</span><span class="n">8</span></span> = 0,375</span></span></div>
+      <div class="teil"><span class="tn">d)</span><span>P(kein Ass) = 1 − <span class="b"><span class="z">1</span><span class="n">8</span></span> = <span class="sol"><span class="b"><span class="z">7</span><span class="n">8</span></span> = 0,875</span></span></div>
+    </div>
+    <div class="loe-hinweis">Wichtig: Das Skatspiel hat 32 Karten (7, 8, 9, 10, B, D, K, As × 4 Farben) — kein Standard-Kartendeck mit 52!</div>
+  </div>
+
+  <div class="sec-hdr">Seite 2</div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 3: Laplace-Bedingung prüfen<span class="sterne s2">★★</span></div>
+    <div class="loe-antwort">
+      <div class="teil"><span class="tn">a)</span><span><span class="sol">✓ Ja</span> — alle 6 Seiten des fairen Würfels sind gleichwahrscheinlich.</span></div>
+      <div class="teil"><span class="tn">b)</span><span><span class="sol">✗ Nein</span> — Wetter hängt von Jahreszeit, Klima usw. ab. P(Sonne) ≠ P(kein Sonne) im Allgemeinen.</span></div>
+      <div class="teil"><span class="tn">c)</span><span><span class="sol">✗ Nein</span> — P(rot) = <span class="b"><span class="z">3</span><span class="n">10</span></span> ≠ P(blau) = <span class="b"><span class="z">7</span><span class="n">10</span></span>. Nicht gleich wahrscheinlich.</span></div>
+    </div>
+    <div class="loe-hinweis">Begründung einfordern — nicht nur „ja/nein"! Das Verstehen der Bedingung ist das Lernziel.</div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 4: Gegenereignis klug nutzen<span class="sterne s2">★★</span></div>
+    <div class="loe-antwort">
+      <div class="teil"><span class="tn">a)</span><span>P(keine 1) = 1 − <span class="b"><span class="z">1</span><span class="n">6</span></span> = <span class="sol"><span class="b"><span class="z">5</span><span class="n">6</span></span> ≈ 0,83</span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>P(Z,Z) = <span class="b"><span class="z">1</span><span class="n">2</span></span> · <span class="b"><span class="z">1</span><span class="n">2</span></span> = <span class="b"><span class="z">1</span><span class="n">4</span></span> &nbsp;→&nbsp; P(mind. 1K) = 1 − <span class="b"><span class="z">1</span><span class="n">4</span></span> = <span class="sol"><span class="b"><span class="z">3</span><span class="n">4</span></span> = 0,75</span></span></div>
+    </div>
+    <div class="loe-hinweis">b) ist Vorgriff auf die Pfadregeln (K1-4) — hier genügt das intuitive Verständnis. Wer fragt, warum P(Z,Z) = <span class="b"><span class="z">1</span><span class="n">4</span></span>: „Je Wurf <span class="b"><span class="z">1</span><span class="n">2</span></span>, zwei Würfe unabhängig → <span class="b"><span class="z">1</span><span class="n">2</span></span> · <span class="b"><span class="z">1</span><span class="n">2</span></span>."</div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 5: Eigenes Experiment (individuelle Lösung)<span class="sterne s3">★★★</span></div>
+    <div class="loe-antwort">
+      Individuelle Lösungen akzeptieren. Kontrollieren:<br>
+      ✓ Ω vollständig und korrekt angegeben?<br>
+      ✓ Laplace-Bedingung begründet (warum gleich wahrscheinlich)?<br>
+      ✓ P(E) = <span class="b"><span class="z">|E|</span><span class="n">|Ω|</span></span> korrekt berechnet?<br>
+      ✓ P(Ē) = 1 − P(E) und P(E) + P(Ē) = 1?
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Merksatz-Lücken</div>
+    <div class="loe-antwort">
+      P(E) = <span class="loe-sol"><span class="b"><span class="z">|E|</span><span class="n">|Ω|</span></span></span> &nbsp;&nbsp;&nbsp; P(Ē) = <span class="loe-sol">1 − P(E)</span>
+    </div>
+  </div>
+
+  <div class="seiten-nr">8I · Daten und Zufall · Einführung · Lösungsblatt</div>
+</div>
+
+</body></html>
