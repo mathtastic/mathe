@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/Users/SebastianHofmiller/Downloads/K2-1_Baumdiagramme_ueben_12.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>K2-1 · Baumdiagramme Übung · 8I</title><link href="./K2-1 · Baumdiagramme Übung · 8I_files/css2" rel="stylesheet">
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #F0EDE8; font-family: 'Nunito', sans-serif; font-size: 13px; color: #1a1a1a; line-height: 1.65; padding: 30px 20px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+.page { width: 210mm; min-height: 297mm; background: #fff; margin: 0 auto 40px; padding: 14mm 17mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.10); display: flex; flex-direction: column; position: relative; }
+.page-loe { border-top: 5px solid #1A7A50; }
+.page-loe .sec-hdr { border-left-color: #1A7A50; }
+.page-loe .auf-label::before { background: #1A7A50; }
+.kat-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; display: flex; align-items: center; gap: 5px; }
+.kat-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; background: rgba(255,255,255,0.7); border-radius: 50%; }
+.kat-badge.k2 { background: #CF7C09; }
+.loe-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; background: #1A7A50; }
+.sequenz-badge { font-family: 'Nunito', sans-serif; font-size: 10.5px; font-weight: 700; color: #5A5A5A; text-transform: uppercase; letter-spacing: .10em; text-align: center; margin-bottom: 3px; }
+.pg-title { text-align: center; font-family: 'Lora', serif; font-size: 19px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+.pg-sub { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; color: #1A7A50; font-style: italic; margin-bottom: 14px; }
+.datum-row { display: flex; justify-content: flex-end; align-items: center; gap: 8px; font-size: 11.5px; font-family: 'Nunito', sans-serif; color: #666; margin-bottom: 14px; }
+.datum-row .ln-d { border-bottom: 1px solid #aaa; display: inline-block; width: 85px; height: 13px; }
+.klasse-tag { font-size: 11px; font-weight: 700; color: #444; border: 1px solid #bbb; border-radius: 20px; padding: 1px 9px; margin-left: 6px; }
+.tape-tl, .tape-tr { position: absolute; width: 36px; height: 20px; background: rgba(235,222,175,0.90); filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.55)); clip-path: polygon(0% 0%,9% 20%,2% 45%,10% 70%,3% 90%,0% 100%,100% 100%,97% 80%,100% 55%,91% 30%,98% 10%,92% 0%); }
+.tape-tl { top: -4px; left: -2px; transform: rotate(-38deg); }
+.tape-tr { top: -4px; right: -2px; transform: rotate(38deg); }
+.tape-box { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 13px 14px 11px; margin-bottom: 16px; font-family: 'Lora', serif; font-size: 12.5px; line-height: 1.68; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.def-tape { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 10px 13px; margin-bottom: 15px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.def-row { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px dashed #D0C898; font-family: 'Nunito', sans-serif; font-size: 12.5px; }
+.def-row:last-child { border-bottom: none; padding-bottom: 0; }
+.def-left { width: 68px; flex-shrink: 0; text-align: center; font-family: 'Caveat', cursive; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.def-left small { display: block; font-family: 'Nunito', sans-serif; font-size: 10px; font-weight: 700; color: #666; }
+.merk-box { position: relative; background: #FFFDE6; border: 1.5px solid #E8D84A; border-radius: 5px; padding: 15px 13px 12px; margin-bottom: 15px; font-family: 'Lora', serif; font-size: 12.5px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.merk-box .tape-tl, .merk-box .tape-tr { all: unset; position: absolute; width: 15px; height: 22px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 32'%3E%3Ccircle cx='11' cy='11' r='9.5' fill='%23E8821A' stroke='%231a1a1a' stroke-width='2'/%3E%3Crect x='10' y='19' width='2' height='11' rx='1' fill='%23999'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: contain; top: -12px; }
+.merk-box .tape-tl { left: 14px; transform: rotate(-28deg); }
+.merk-box .tape-tr { right: 14px; transform: rotate(28deg); }
+.merk-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; font-style: italic; color: #6B5A00; margin-bottom: 4px; text-decoration: underline; text-underline-offset: 3px; }
+.tipp-box { background: #F0F7FF; border: 1.5px solid #88BBE0; border-left: 4px solid #5599CC; border-radius: 5px; padding: 9px 12px 9px 34px; margin: 9px 0; font-family: 'Nunito', sans-serif; font-size: 12px; color: #1A3A5C; position: relative; }
+.tipp-box::before { content: '💡'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); }
+/* EXPERIMENT-BLOCK */
+.exp-block { position: relative; background: #FFF5EB; border: 1.5px solid #D4892A; border-left: 4px solid #E8821A; border-radius: 5px; padding: 14px 14px 13px; margin: 15px 0; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.exp-pin-tl, .exp-pin-tr { all: unset; position: absolute; width: 15px; height: 22px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 32'%3E%3Ccircle cx='11' cy='11' r='9.5' fill='%23E8821A' stroke='%231a1a1a' stroke-width='2'/%3E%3Ccircle cx='7.5' cy='7' r='2.5' fill='rgba(255,255,255,0.45)'/%3E%3Crect x='10' y='19' width='2' height='11' rx='1' fill='%23999'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: contain; top: -12px; }
+.exp-pin-tl { left: 18px; transform: rotate(-22deg); }
+.exp-pin-tr { right: 18px; transform: rotate(22deg); }
+.exp-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px dashed #D4892A; }
+.exp-icon-wrap { width: 36px; height: 36px; background: #E8821A; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; box-shadow: 2px 2px 0 rgba(0,0,0,0.12); }
+.exp-meta { flex: 1; }
+.exp-seq-label { font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .10em; color: #A05A10; margin-bottom: 1px; }
+.exp-title { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #5A2E00; }
+.exp-badges { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+.exp-badge { font-family: 'Nunito', sans-serif; font-size: 10px; font-weight: 700; padding: 2px 9px; border-radius: 20px; border: 1px solid #D4892A; color: #7A3E00; background: #FFF0DC; }
+.exp-badge.mat { background: #E8821A; color: white; border-color: #C06010; }
+.exp-body { font-family: 'Nunito', sans-serif; font-size: 12.5px; color: #3A2000; line-height: 1.68; }
+.exp-tbl { width: 100%; border-collapse: collapse; font-size: 11.5px; margin: 8px 0 6px; }
+.exp-tbl th { background: #E8821A; color: white; font-weight: 700; padding: 5px 7px; text-align: center; font-family: 'Nunito', sans-serif; }
+.exp-tbl td { border: 1px solid #D4892A; padding: 6px 7px; text-align: center; font-family: 'Nunito', sans-serif; color: #3A2000; }
+.exp-tbl td.strich { background: #FDFAF0; font-family: 'Caveat', cursive; font-size: 15px; }
+.exp-tbl td.fill { background: #FFF0DC; }
+.exp-bruecke { margin-top: 10px; padding: 8px 11px; background: #FFE8C8; border-radius: 4px; border-left: 3px solid #E8821A; font-family: 'Lora', serif; font-size: 12px; font-style: italic; color: #5A2E00; line-height: 1.6; }
+.exp-bruecke strong { font-style: normal; color: #C06010; }
+/* AUFGABEN */
+.sec-hdr { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 22px 0 12px; padding: 4px 0 4px 11px; border-left: 4px solid #CF7C09; border-bottom: 1px solid #E0DDD5; display: block; }
+.auf { margin-bottom: 22px; }
+.auf-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+.auf-label::before { content: ''; display: inline-block; width: 9px; height: 18px; background: #CF7C09; border-radius: 2px; flex-shrink: 0; }
+.sterne { margin-left: auto; font-size: 11px; flex-shrink: 0; }
+.sterne.s1 { color: #1A7A50; } .sterne.s2 { color: #CF7C09; } .sterne.s3 { color: #A31515; }
+.auf-body { font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.82; }
+.teil { display: flex; gap: 7px; margin-top: 10px; font-size: 12.5px; align-items: flex-start; }
+.tn { font-weight: 700; color: #555; min-width: 21px; flex-shrink: 0; }
+.ll { display: flex; flex-direction: column; gap: 38px; margin-top: 12px; }
+.ll .l { border-bottom: 1px solid #bbb; width: 100%; }
+.ln { border-bottom: 1px solid #aaa; display: inline-block; min-width: 80px; height: 14px; vertical-align: bottom; }
+.luecke { display: inline-block; border-bottom: 1.5px solid #C8A800; min-width: 70px; height: 16px; vertical-align: bottom; margin: 0 3px; }
+.draw-box { border: 1.5px dashed #bbb; border-radius: 4px; background-color: #FAFAFA; background-image: radial-gradient(circle, #ddd 1px, transparent 1px); background-size: 12px 12px; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 11.5px; margin-top: 7px; font-style: italic; gap: 5px; position: relative; }
+.draw-box { border: 1.5px solid #ccc; border-radius: 4px; background-color: #FAFFFE; background-image: linear-gradient(to right, #DFF0EE 1px, transparent 1px), linear-gradient(to bottom, #DFF0EE 1px, transparent 1px); background-size: 8mm 8mm; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 11.5px; margin-top: 7px; font-style: italic; gap: 5px; }
+.mt-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.mt-tbl th { background: #CF7C09; color: white; font-weight: 700; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl td { border: 1px solid #E8D0A0; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl tr:nth-child(even) td { background: #FFF8EE; }
+.mt-tbl td.fill { background: #FFF3DC; }
+/* BRÜCHE */
+.b { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; line-height: 1.15; margin: 0 2px; font-size: 0.9em; }
+.b .z { border-bottom: 1.3px solid currentColor; padding: 0 3px; text-align: center; display: block; white-space: nowrap; }
+.b .n { padding: 0 3px; text-align: center; display: block; white-space: nowrap; }
+/* QR-HINWEIS */
+.qr-box { position: absolute; bottom: 10mm; right: 14mm; text-align: center; font-family: 'Nunito', sans-serif; font-size: 8px; color: #aaa; border: 1px solid #ddd; border-radius: 4px; padding: 5px; background: white; }
+/* LÖSUNGSBLATT */
+.loe-antwort { background: #E8F5EE; border: 1.5px solid #1A7A50; border-radius: 5px; padding: 10px 13px; margin: 5px 0; font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.82; }
+.loe-antwort .sol { font-weight: 700; color: #0D5C35; }
+.loe-antwort .teil { display: flex; gap: 7px; margin-top: 5px; font-size: 12.5px; align-items: flex-start; }
+.loe-antwort .tn { font-weight: 700; color: #0D5C35; min-width: 21px; flex-shrink: 0; }
+.loe-hinweis { font-family: 'Lora', serif; font-size: 11.5px; font-style: italic; color: #555; border-left: 3px solid #A8D4B8; padding-left: 9px; margin: 6px 0 0; line-height: 1.6; }
+.loe-sol { color: #A31515; font-weight: 700; }
+.loe-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.loe-tbl th { background: #1A7A50; color: white; font-weight: 700; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.loe-tbl td { border: 1px solid #A8D4B8; padding: 6px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.loe-tbl tr:nth-child(even) td { background: #F0FAF4; }
+.loe-tbl td.sol { background: #E8F5EE; font-weight: 700; color: #0D5C35; }
+.exp-hinweis { background: #FFF5EB; border: 1.5px solid #D4892A; border-left: 4px solid #E8821A; border-radius: 5px; padding: 9px 13px; margin: 5px 0 10px; font-family: 'Nunito', sans-serif; font-size: 12px; color: #5A2E00; line-height: 1.65; }
+.exp-hinweis strong { color: #C06010; }
+.seiten-nr { font-family: 'Nunito', sans-serif; font-size: 9px; color: #bbb; text-align: center; margin-top: auto; padding-top: 10px; }
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  body { background: white !important; padding: 0 !important; margin: 0 !important; }
+  .page { box-shadow: none !important; margin: 0 !important; page-break-after: always !important; break-after: page !important; width: 210mm !important; height: 297mm !important; min-height: 0 !important; overflow: hidden !important; padding: 12mm 15mm 10mm !important; }
+  .qr-box { display: none !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
+/* Schreiblinien in Klebstreifen-Boxen */
+.tape-box .ll { margin-top: 16px !important; gap: 42px !important; }
+.tape-box .l  { padding-bottom: 6px; }
+</style>
+<script src="./K2-1 · Baumdiagramme Übung · 8I_files/qrcode.min.js.Download"></script>
+</head>
+<body><svg style="position:absolute;width:0;height:0;"><defs><filter id="wavy" x="-3%" y="-8%" width="106%" height="116%"><feturbulence type="fractalNoise" baseFrequency="0.020 0.030" numOctaves="2" seed="5" result="noise"></feturbulence><fedisplacementmap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"></fedisplacementmap></filter></defs></svg>
+<div class="page" data-kat="k2">
+  <div class="kat-badge k2">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Baumdiagramme — Übung</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+
+  <div class="tape-box">
+    <span class="tape-tl"></span><span class="tape-tr"></span>
+    In dieser Stunde trainiert ihr das Baumdiagramm in verschiedenen Alltagssituationen. Arbeitet die Aufgaben gemeinsam mit eurem Partner — besprecht eure Lösungen, bevor ihr sie aufschreibt.
+  </div>
+
+  <div class="sec-hdr">Aufgaben</div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 1: Outfits kombinieren<span class="sterne s1">★</span></div>
+    <div class="auf-body">
+      Tim hat 3 Hosen (blau = B, schwarz = S, grau = G) und 2 T-Shirts (weiß = W, rot = R).
+      <div class="teil"><span class="tn">a)</span><span>Zeichne das vollständige Baumdiagramm.</span></div>
+      <div class="draw-box draw-box-baum" style="height:155px;"></div>
+      <div class="teil" style="margin-top:6px;"><span class="tn">b)</span><span>Wie viele verschiedene Outfits gibt es? <span class="ln" style="min-width:40px;"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>Schreibe Ω als Menge auf.</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 2: Speisekarte<span class="sterne s1">★</span></div>
+    <div class="auf-body">
+      Ein Restaurant bietet an: 2 Suppen (Tomaten = T, Gemüse = G), 3 Hauptgerichte (Schnitzel = S, Pasta = P, Fisch = F) und 2 Desserts (Eis = E, Kuchen = K).
+      <div class="teil"><span class="tn">a)</span><span>Wie viele verschiedene 3-Gänge-Menüs gibt es? Berechne — zeichne keinen Baum.</span></div>
+      <div class="ll" style="margin-bottom:8px;"><div class="l"></div></div>
+      <div class="teil"><span class="tn">b)</span><span>Jemand mag keinen Fisch. Wie viele Menüs bleiben übrig? <span class="ln" style="min-width:60px;"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>Wie viele Menüs hätte eine Karte, wenn man 24 verschiedene zusammenstellen können soll und je 2 Suppen und 2 Desserts angeboten werden? Wie viele Hauptgerichte sind nötig?</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 3: Dreimaliger Münzwurf<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      Eine Münze wird 3-mal geworfen (K = Kopf, Z = Zahl).
+      <div class="teil"><span class="tn">a)</span><span>Zeichne das vollständige Baumdiagramm mit Wahrscheinlichkeiten an den Ästen.</span></div>
+      <div class="draw-box draw-box-baum" style="height:185px;"></div>
+      <div class="teil" style="margin-top:6px;"><span class="tn">b)</span><span>P(dreimal Kopf) = <span class="ln"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>P(genau zweimal Kopf) = <span class="ln"></span></span></div>
+      <div class="teil"><span class="tn">d)</span><span>P(mindestens einmal Zahl) = <span class="ln"></span></span></div>
+    </div>
+  </div>
+
+  <div class="qr-box" id="K2_1_Baumdiagramme_ueben_1">
+  <div id="qr_K2_1_Baumdiagramme_ueben_1" style="width:64px;height:64px;overflow:hidden;font-size:0;" title="https://mathtastic.github.io/mathe/K2-1_Baumdiagramme_ueben.html"><canvas width="64" height="64" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
+  <div style="font-size:7px;color:#aaa;margin-top:3px;text-align:center;">Lösung</div>
+  <script>new QRCode(document.getElementById("qr_K2_1_Baumdiagramme_ueben_1"),{text:"https://mathtastic.github.io/mathe/K2-1_Baumdiagramme_ueben.html",width:64,height:64,colorDark:"#1a1a1a",colorLight:"#ffffff"});</script>
+</div>
+  
+<div style="margin:4px 0 8px;">
+  </div>
+  <div class="seiten-nr">8I · Daten und Zufall · Übung</div>
+</div>
+
+<div class="page" data-kat="k2">
+  <div class="kat-badge k2">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Baumdiagramme — Übung</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 4: Kugeln ohne Zurücklegen<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      Ein Beutel enthält 2 rote (R), 1 blaue (B) und 1 gelbe (G) Kugel. Du ziehst zweimal <strong>ohne Zurücklegen</strong>.
+      <div class="tipp-box">Nach dem ersten Zug sind nur noch 3 Kugeln im Beutel — die Wahrscheinlichkeiten in Stufe 2 ändern sich!</div>
+      <div class="teil"><span class="tn">a)</span><span>Zeichne das Baumdiagramm und trage alle Wahrscheinlichkeiten ein.</span></div>
+      <div class="draw-box draw-box-baum" style="height:185px;"></div>
+      <div class="teil" style="margin-top:6px;"><span class="tn">b)</span><span>P(beide rot) = <span class="ln"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>P(mindestens eine rote Kugel) = <span class="ln"></span></span></div>
+      <div class="teil"><span class="tn">d)</span><span>Probe: Summe aller Pfadwahrscheinlichkeiten = <span class="ln" style="min-width:40px;"></span></span></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 5: Familie Smile — Gruppenfoto<span class="sterne s3">★★★</span></div>
+    <div class="auf-body">
+      Die Familie Smile (Mama, Papa, Kind 1, Kind 2) stellt sich für ein Foto auf. Papa steht immer ganz rechts außen.
+      <div class="teil"><span class="tn">a)</span><span>Zeichne ein Baumdiagramm für alle Anordnungen der anderen 3 Personen.</span></div>
+      <div class="draw-box draw-box-baum" style="height:160px;"></div>
+      <div class="teil" style="margin-top:6px;"><span class="tn">b)</span><span>Wie viele Anordnungen gibt es? <span class="ln" style="min-width:40px;"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>Nun steht auch Mama immer ganz links außen. Wie viele Anordnungen bleiben übrig? Begründe ohne Baum.</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+
+  <div class="qr-box" id="K2_1_Baumdiagramme_ueben_2">
+  <div id="qr_K2_1_Baumdiagramme_ueben_2" style="width:64px;height:64px;overflow:hidden;font-size:0;" title="https://mathtastic.github.io/mathe/K2-1_Baumdiagramme_ueben.html"><canvas width="64" height="64" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
+  <div style="font-size:7px;color:#aaa;margin-top:3px;text-align:center;">Lösung</div>
+  <script>new QRCode(document.getElementById("qr_K2_1_Baumdiagramme_ueben_2"),{text:"https://mathtastic.github.io/mathe/K2-1_Baumdiagramme_ueben.html",width:64,height:64,colorDark:"#1a1a1a",colorLight:"#ffffff"});</script>
+</div>
+  <div class="seiten-nr">8I · Daten und Zufall · Übung</div>
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════════════
+     LÖSUNGSBLATT — nur für den Lehrer
+     ═══════════════════════════════════════════════════ -->
+<div class="page page-loe">
+  <div class="loe-badge">✔ Lösungsblatt</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Baumdiagramme Übung — Lösungsblatt</div>
+  <div class="pg-sub">Lösungsblatt · nur für den Lehrer</div>
+
+  <div class="sec-hdr">Aufgabe 1: Outfits</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">b)</span><span><span class="sol">6 Outfits</span></span></div>
+    <div class="teil"><span class="tn">c)</span><span><span class="sol">Ω = {(B,W),(B,R),(S,W),(S,R),(G,W),(G,R)}</span></span></div>
+  </div>
+
+  <div class="sec-hdr">Aufgabe 2: Speisekarte</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">a)</span><span>2×3×2 = <span class="sol">12</span></span></div>
+    <div class="teil"><span class="tn">b)</span><span><span class="sol">8 Menüs</span></span></div>
+    <div class="teil"><span class="tn">c)</span><span>H = <span class="b"><span class="z">24</span><span class="n">4</span></span> = <span class="sol">6 Hauptgerichte</span></span></div>
+  </div>
+
+  <div class="sec-hdr">Aufgabe 3: 3× Münzwurf</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">b)</span><span><span class="sol"><span class="b"><span class="z">1</span><span class="n">8</span></span></span></span></div>
+    <div class="teil"><span class="tn">c)</span><span>3·<span class="b"><span class="z">1</span><span class="n">8</span></span> = <span class="sol"><span class="b"><span class="z">3</span><span class="n">8</span></span></span></span></div>
+    <div class="teil"><span class="tn">d)</span><span>1−<span class="b"><span class="z">1</span><span class="n">8</span></span> = <span class="sol"><span class="b"><span class="z">7</span><span class="n">8</span></span></span></span></div>
+  </div>
+  <p style="font-family:Nunito,sans-serif;font-size:10px;color:#666;margin:8px 0 3px;font-style:italic;">Musterlösung A3 — 3× Münzwurf:</p><div style="background:#FAFAFA;border:1px solid #ddd;border-radius:5px;padding:10px 8px;margin:4px 0 10px;"><svg width="320" height="155" style="display:block;margin:0 auto;"><text x="15" y="76" font-family="Nunito,sans-serif" font-size="10" fill="#999" font-weight="700" text-anchor="middle">•</text><line x1="20" y1="75" x2="68" y2="28" stroke="#999" stroke-width="1.6"></line><rect x="32" y="43.5" width="23" height="14" fill="white" rx="2"></rect><text x="44" y="55.5" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="75" y="32" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><line x1="82" y1="28" x2="130" y2="8" stroke="#999" stroke-width="1.6"></line><rect x="94" y="10.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="22.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="137" y="12" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><line x1="144" y1="8" x2="188" y2="0" stroke="#999" stroke-width="1.6"></line><rect x="154" y="-4.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="8.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="4" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><text x="210" y="4" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(KKK)</text><text x="210" y="14" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="144" y1="8" x2="188" y2="16" stroke="#999" stroke-width="1.6"></line><rect x="154" y="4.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="16.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="20" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><text x="210" y="20" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(KKZ)</text><text x="210" y="30" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="82" y1="28" x2="130" y2="48" stroke="#999" stroke-width="1.6"></line><rect x="94" y="30.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="42.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="137" y="52" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><line x1="144" y1="48" x2="188" y2="40" stroke="#999" stroke-width="1.6"></line><rect x="154" y="36.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="48.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="44" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><text x="210" y="44" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(KZK)</text><text x="210" y="54" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="144" y1="48" x2="188" y2="56" stroke="#999" stroke-width="1.6"></line><rect x="154" y="44.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="56.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="60" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><text x="210" y="60" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(KZZ)</text><text x="210" y="70" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="20" y1="75" x2="68" y2="122" stroke="#999" stroke-width="1.6"></line><rect x="32" y="90.5" width="23" height="14" fill="white" rx="2"></rect><text x="44" y="102.5" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="75" y="126" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><line x1="82" y1="122" x2="130" y2="102" stroke="#999" stroke-width="1.6"></line><rect x="94" y="104.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="116.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="137" y="106" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><line x1="144" y1="102" x2="188" y2="94" stroke="#999" stroke-width="1.6"></line><rect x="154" y="90.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="102.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="98" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><text x="210" y="98" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(ZKK)</text><text x="210" y="108" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="144" y1="102" x2="188" y2="110" stroke="#999" stroke-width="1.6"></line><rect x="154" y="98.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="110.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="114" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><text x="210" y="114" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(ZKZ)</text><text x="210" y="124" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="82" y1="122" x2="130" y2="142" stroke="#999" stroke-width="1.6"></line><rect x="94" y="124.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="136.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="137" y="146" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><line x1="144" y1="142" x2="188" y2="134" stroke="#999" stroke-width="1.6"></line><rect x="154" y="130.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="142.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="138" font-family="Nunito,sans-serif" font-size="13" fill="#1C5F96" font-weight="700" text-anchor="middle">K</text><text x="210" y="138" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(ZZK)</text><text x="210" y="148" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text><line x1="144" y1="142" x2="188" y2="150" stroke="#999" stroke-width="1.6"></line><rect x="154" y="138.0" width="23" height="14" fill="white" rx="2"></rect><text x="166" y="150.0" font-family="Nunito,sans-serif" font-size="9" fill="#555" font-weight="700" text-anchor="middle">1/2</text><text x="195" y="154" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">Z</text><text x="210" y="154" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(ZZZ)</text><text x="210" y="164" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/8</text></svg></div>
+
+  <div class="sec-hdr">Aufgabe 4: Kugeln ohne Zurücklegen (2R,1B,1G)</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">b)</span><span><span class="b"><span class="z">2</span><span class="n">4</span></span>·<span class="b"><span class="z">1</span><span class="n">3</span></span> = <span class="sol"><span class="b"><span class="z">1</span><span class="n">6</span></span></span></span></div>
+    <div class="teil"><span class="tn">c)</span><span>1−<span class="b"><span class="z">1</span><span class="n">12</span></span>−<span class="b"><span class="z">1</span><span class="n">12</span></span> = <span class="sol"><span class="b"><span class="z">5</span><span class="n">6</span></span></span></span></div>
+    <div class="teil"><span class="tn">d)</span><span><span class="sol">1 ✓</span></span></div>
+  </div>
+  <div class="loe-hinweis">Ohne ZL = weniger Kugeln in Stufe 2!</div>
+  <p style="font-family:Nunito,sans-serif;font-size:10px;color:#666;margin:8px 0 3px;font-style:italic;">Musterlösung A4 — Kugeln o.Z. (2R,1B,1G):</p><div style="background:#FAFAFA;border:1px solid #ddd;border-radius:5px;padding:10px 8px;margin:4px 0 10px;"><svg width="280" height="158" style="display:block;margin:0 auto;"><text x="15" y="79" font-family="Nunito,sans-serif" font-size="10" fill="#999" font-weight="700" text-anchor="middle">•</text><line x1="20" y1="78" x2="68" y2="18" stroke="#999" stroke-width="1.6"></line><rect x="32" y="40.0" width="23" height="14" fill="white" rx="2"></rect><text x="44" y="52.0" font-family="Nunito,sans-serif" font-size="9" fill="#C0392B" font-weight="700" text-anchor="middle">2/4</text><text x="75" y="22" font-family="Nunito,sans-serif" font-size="13" fill="#C0392B" font-weight="700" text-anchor="middle">R</text><line x1="82" y1="18" x2="130" y2="0" stroke="#999" stroke-width="1.6"></line><rect x="94" y="1.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="13.0" font-family="Nunito,sans-serif" font-size="9" fill="#C0392B" font-weight="700" text-anchor="middle">1/3</text><text x="137" y="4" font-family="Nunito,sans-serif" font-size="13" fill="#C0392B" font-weight="700" text-anchor="middle">R</text><text x="153" y="4" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(R,R)</text><text x="153" y="14" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/6</text><line x1="82" y1="18" x2="130" y2="18" stroke="#999" stroke-width="1.6"></line><rect x="94" y="10.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="22.0" font-family="Nunito,sans-serif" font-size="9" fill="#2471A3" font-weight="700" text-anchor="middle">1/3</text><text x="137" y="22" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">B</text><text x="153" y="22" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(R,B)</text><text x="153" y="32" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/6</text><line x1="82" y1="18" x2="130" y2="36" stroke="#999" stroke-width="1.6"></line><rect x="94" y="19.0" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="31.0" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="middle">1/3</text><text x="137" y="40" font-family="Nunito,sans-serif" font-size="13" fill="#1A7A50" font-weight="700" text-anchor="middle">G</text><text x="153" y="40" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(R,G)</text><text x="153" y="50" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/6</text><line x1="20" y1="78" x2="68" y2="78" stroke="#999" stroke-width="1.6"></line><rect x="32" y="70.0" width="23" height="14" fill="white" rx="2"></rect><text x="44" y="82.0" font-family="Nunito,sans-serif" font-size="9" fill="#2471A3" font-weight="700" text-anchor="middle">1/4</text><text x="75" y="82" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">B</text><line x1="82" y1="78" x2="130" y2="69" stroke="#999" stroke-width="1.6"></line><rect x="94" y="65.5" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="77.5" font-family="Nunito,sans-serif" font-size="9" fill="#C0392B" font-weight="700" text-anchor="middle">2/3</text><text x="137" y="73" font-family="Nunito,sans-serif" font-size="13" fill="#C0392B" font-weight="700" text-anchor="middle">R</text><text x="153" y="73" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(B,R)</text><text x="153" y="83" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/6</text><line x1="82" y1="78" x2="130" y2="87" stroke="#999" stroke-width="1.6"></line><rect x="94" y="74.5" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="86.5" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="middle">1/3</text><text x="137" y="91" font-family="Nunito,sans-serif" font-size="13" fill="#1A7A50" font-weight="700" text-anchor="middle">G</text><text x="153" y="91" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(B,G)</text><text x="153" y="101" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/12</text><line x1="20" y1="78" x2="68" y2="138" stroke="#999" stroke-width="1.6"></line><rect x="32" y="100.0" width="23" height="14" fill="white" rx="2"></rect><text x="44" y="112.0" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="middle">1/4</text><text x="75" y="142" font-family="Nunito,sans-serif" font-size="13" fill="#1A7A50" font-weight="700" text-anchor="middle">G</text><line x1="82" y1="138" x2="130" y2="129" stroke="#999" stroke-width="1.6"></line><rect x="94" y="125.5" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="137.5" font-family="Nunito,sans-serif" font-size="9" fill="#C0392B" font-weight="700" text-anchor="middle">2/3</text><text x="137" y="133" font-family="Nunito,sans-serif" font-size="13" fill="#C0392B" font-weight="700" text-anchor="middle">R</text><text x="153" y="133" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(G,R)</text><text x="153" y="143" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/6</text><line x1="82" y1="138" x2="130" y2="147" stroke="#999" stroke-width="1.6"></line><rect x="94" y="134.5" width="23" height="14" fill="white" rx="2"></rect><text x="106" y="146.5" font-family="Nunito,sans-serif" font-size="9" fill="#2471A3" font-weight="700" text-anchor="middle">1/3</text><text x="137" y="151" font-family="Nunito,sans-serif" font-size="13" fill="#2471A3" font-weight="700" text-anchor="middle">B</text><text x="153" y="151" font-family="Nunito,sans-serif" font-size="9" fill="#1A7A50" font-weight="700" text-anchor="start">(G,B)</text><text x="153" y="161" font-family="Nunito,sans-serif" font-size="8" fill="#999" text-anchor="start">P=1/12</text></svg></div>
+
+  <div class="sec-hdr">Aufgabe 5: Familie Smile</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">b)</span><span>3! = <span class="sol">6</span></span></div>
+    <div class="teil"><span class="tn">c)</span><span><span class="sol">2 Anordnungen</span></span></div>
+  </div>
+  <div class="seiten-nr">8I · Daten und Zufall · Übung · Lösungsblatt</div>
+</div>
+
+
+</body></html>

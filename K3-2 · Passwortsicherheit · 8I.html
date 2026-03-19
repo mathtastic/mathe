@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///C:/Users/SebastianHofmiller/Downloads/K3-2_Passwortsicherheit_3.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>K3-2 · Passwortsicherheit · 8I</title><link href="./K3-2 · Passwortsicherheit · 8I_files/css2" rel="stylesheet"><script src="./K3-2 · Passwortsicherheit · 8I_files/qrcode.min.js.Download"></script>
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #F0EDE8; font-family: 'Nunito', sans-serif; font-size: 13px; color: #1a1a1a; line-height: 1.65; padding: 30px 20px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+.page { width: 210mm; min-height: 297mm; background: #fff; margin: 0 auto 40px; padding: 14mm 17mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.10); display: flex; flex-direction: column; position: relative; }
+.page-loe { border-top: 5px solid #1A7A50; }
+.page-loe .sec-hdr { border-left-color: #1A7A50; }
+.page-loe .auf-label::before { background: #1A7A50; }
+.kat-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; display: flex; align-items: center; gap: 5px; }
+.kat-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; background: rgba(255,255,255,0.7); border-radius: 50%; }
+.kat-badge.k3 { background: #C2571A; }
+.loe-badge { position: absolute; top: 10mm; right: 17mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; background: #1A7A50; }
+.sequenz-badge { font-family: 'Nunito', sans-serif; font-size: 10.5px; font-weight: 700; color: #5A5A5A; text-transform: uppercase; letter-spacing: .10em; text-align: center; margin-bottom: 3px; }
+.pg-title { text-align: center; font-family: 'Lora', serif; font-size: 19px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+.pg-sub { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; color: #1A7A50; font-style: italic; margin-bottom: 14px; }
+.datum-row { display: flex; justify-content: flex-end; align-items: center; gap: 8px; font-size: 11.5px; color: #666; margin-bottom: 14px; }
+.datum-row .ln-d { border-bottom: 1px solid #aaa; display: inline-block; width: 85px; height: 13px; }
+.klasse-tag { font-size: 11px; font-weight: 700; color: #444; border: 1px solid #bbb; border-radius: 20px; padding: 1px 9px; margin-left: 6px; }
+.tape-tl, .tape-tr { position: absolute; width: 36px; height: 20px; background: rgba(235,222,175,0.90); filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.55)); clip-path: polygon(0% 0%,9% 20%,2% 45%,10% 70%,3% 90%,0% 100%,100% 100%,97% 80%,100% 55%,91% 30%,98% 10%,92% 0%); }
+.tape-tl { top: -4px; left: -2px; transform: rotate(-38deg); }
+.tape-tr { top: -4px; right: -2px; transform: rotate(38deg); }
+.tape-box { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 14px 15px 13px; margin-bottom: 18px; font-family: 'Lora', serif; font-size: 12.5px; line-height: 1.68; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.def-tape { position: relative; background: #FDFAF0; border: 1.5px solid #D0C898; border-radius: 5px; padding: 10px 13px; margin-bottom: 15px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.def-row { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px dashed #D0C898; font-family: 'Nunito', sans-serif; font-size: 12.5px; }
+.def-row:last-child { border-bottom: none; padding-bottom: 0; }
+.def-left { width: 68px; flex-shrink: 0; text-align: center; font-family: 'Caveat', cursive; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.def-left small { display: block; font-family: 'Nunito', sans-serif; font-size: 10px; font-weight: 700; color: #666; }
+.merk-box { position: relative; background: #FFFDE6; border: 1.5px solid #E8D84A; border-radius: 5px; padding: 15px 13px 12px; margin-bottom: 15px; font-family: 'Lora', serif; font-size: 12.5px; box-shadow: 3px 4px 0px rgba(0,0,0,.07); }
+.merk-box .tape-tl, .merk-box .tape-tr { all: unset; position: absolute; width: 15px; height: 22px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 32'%3E%3Ccircle cx='11' cy='11' r='9.5' fill='%23E8821A' stroke='%231a1a1a' stroke-width='2'/%3E%3Crect x='10' y='19' width='2' height='11' rx='1' fill='%23999'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: contain; top: -12px; }
+.merk-box .tape-tl { left: 14px; transform: rotate(-28deg); } .merk-box .tape-tr { right: 14px; transform: rotate(28deg); }
+.merk-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; font-style: italic; color: #6B5A00; margin-bottom: 4px; text-decoration: underline; text-underline-offset: 3px; }
+.tipp-box { background: #F0F7FF; border: 1.5px solid #88BBE0; border-left: 4px solid #5599CC; border-radius: 5px; padding: 9px 12px 9px 34px; margin: 9px 0; font-family: 'Nunito', sans-serif; font-size: 12px; color: #1A3A5C; position: relative; }
+.tipp-box::before { content: '💡'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); }
+.sec-hdr { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 22px 0 12px; padding: 4px 0 4px 11px; border-left: 4px solid #C2571A; border-bottom: 1px solid #E0DDD5; display: block; }
+.auf { margin-bottom: 22px; }
+.auf-label { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+.auf-label::before { content: ''; display: inline-block; width: 9px; height: 18px; background: #C2571A; border-radius: 2px; flex-shrink: 0; }
+.sterne { margin-left: auto; font-size: 11px; flex-shrink: 0; }
+.sterne.s1 { color: #1A7A50; } .sterne.s2 { color: #CF7C09; } .sterne.s3 { color: #A31515; }
+.auf-body { font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.82; }
+.teil { display: flex; gap: 7px; margin-top: 10px; font-size: 12.5px; align-items: flex-start; }
+.tn { font-weight: 700; color: #555; min-width: 21px; flex-shrink: 0; }
+.ll { display: flex; flex-direction: column; gap: 38px; margin-top: 12px; }
+.ll .l { border-bottom: 1px solid #bbb; width: 100%; }
+.ln { border-bottom: 1px solid #aaa; display: inline-block; min-width: 80px; height: 14px; vertical-align: bottom; }
+.luecke { display: inline-block; border-bottom: 1.5px solid #C8A800; min-width: 70px; height: 16px; vertical-align: bottom; margin: 0 3px; }
+.formel-blau { background: #EEF6FD; border: 1.5px solid #88BBE0; border-radius: 5px; padding: 9px 14px; margin: 8px 0; text-align: center; font-family: 'Lora', serif; font-size: 13.5px; font-weight: 700; color: #1A3A5C; }
+.b { display: inline-flex; flex-direction: column; align-items: stretch; vertical-align: middle; line-height: 1.2; margin: 0 3px; font-size: 0.92em; text-align: center; }
+.b .z { border-bottom: 1.4px solid currentColor; padding: 1px 4px 2px; text-align: center; display: block; white-space: nowrap; width: 100%; box-sizing: border-box; }
+.b .n { padding: 2px 4px 0; text-align: center; display: block; white-space: nowrap; width: 100%; box-sizing: border-box; }
+.mt-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.mt-tbl th { background: #C2571A; color: white; font-weight: 700; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl td { border: 1px solid #E8C0A0; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.mt-tbl tr:nth-child(even) td { background: #FDF3EE; }
+.mt-tbl td.fill { background: #FBE8DC; }
+.draw-box { border: 1.5px solid #ccc; border-radius: 4px; background-color: #FAFFFE; background-image: linear-gradient(to right, #DFF0EE 1px, transparent 1px), linear-gradient(to bottom, #DFF0EE 1px, transparent 1px); background-size: 8mm 8mm; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 11.5px; margin-top: 7px; font-style: italic; gap: 5px; }
+/* LÖSUNGSBLATT */
+.loe-antwort { background: #E8F5EE; border: 1.5px solid #1A7A50; border-radius: 5px; padding: 10px 13px; margin: 5px 0; font-family: 'Nunito', sans-serif; font-size: 12.5px; line-height: 1.75; }
+.loe-antwort .sol { font-weight: 700; color: #0D5C35; }
+.loe-antwort .teil { display: flex; gap: 7px; margin-top: 5px; font-size: 12.5px; align-items: flex-start; }
+.loe-antwort .tn { font-weight: 700; color: #0D5C35; min-width: 21px; flex-shrink: 0; }
+.loe-hinweis { font-family: 'Lora', serif; font-size: 11.5px; font-style: italic; color: #555; border-left: 3px solid #A8D4B8; padding-left: 9px; margin: 6px 0 0; line-height: 1.6; }
+.loe-sol { color: #A31515; font-weight: 700; }
+.loe-tbl { width: 100%; border-collapse: collapse; font-size: 12px; margin: 7px 0; }
+.loe-tbl th { background: #1A7A50; color: white; font-weight: 700; padding: 5px 8px; text-align: center; font-family: 'Nunito', sans-serif; }
+.loe-tbl td { border: 1px solid #A8D4B8; padding: 6px 8px; font-family: 'Nunito', sans-serif; }
+.loe-tbl td.sol { background: #E8F5EE; font-weight: 700; color: #0D5C35; }
+/* TIPP-BOX (Lösungsblatt) */
+.tipp-loe { background: #FFF8E8; border: 1.5px solid #E8D000; border-left: 4px solid #C8A800; border-radius: 5px; padding: 9px 12px 9px 34px; margin: 8px 0; font-family: 'Nunito', sans-serif; font-size: 12px; position: relative; }
+.tipp-loe::before { content: '💡'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); }
+/* QR */
+.qr-box { position: absolute; bottom: 10mm; right: 14mm; text-align: center; font-family: 'Nunito', sans-serif; font-size: 8px; color: #aaa; border: 1px solid #ddd; border-radius: 4px; padding: 5px; background: white; }
+.seiten-nr { font-family: 'Nunito', sans-serif; font-size: 9px; color: #bbb; text-align: center; margin-top: auto; padding-top: 10px; }
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  body { background: white !important; padding: 0 !important; margin: 0 !important; }
+  .page { box-shadow: none !important; margin: 0 !important; page-break-after: always !important; break-after: page !important; width: 210mm !important; height: 297mm !important; min-height: 0 !important; overflow: hidden !important; padding: 12mm 15mm 10mm !important; }
+  .qr-box { display: block !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
+/* Schreiblinien in Klebstreifen-Boxen */
+.tape-box .ll { margin-top: 16px !important; gap: 42px !important; }
+.tape-box .l  { padding-bottom: 6px; }
+</style>
+</head>
+<body><svg style="position:absolute;width:0;height:0;"><defs><filter id="wavy"><feturbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="5"></feturbulence><fedisplacementmap in="SourceGraphic" scale="0"></fedisplacementmap></filter></defs></svg>
+<div class="page" data-kat="k3">
+  <div class="kat-badge k3">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Wie sicher ist mein Passwort?</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+
+  <div class="tape-box">
+    <span class="tape-tl"></span><span class="tape-tr"></span>
+    Ein Angreifer versucht, ein 8-stelliges Passwort durch einfaches Ausprobieren zu knacken — einen Versuch pro Millisekunde. Bei einem rein aus Ziffern bestehenden Passwort dauert das maximal <strong>2 Minuten</strong>.
+    <div style="margin-top:8px;font-family:&#39;Nunito&#39;,sans-serif;font-size:12px;">💬 Was würdest du tun, um dein Passwort sicherer zu machen? Notiere deine Idee:</div>
+    <div class="ll tape-box-ll"><div class="l"></div></div>
+  </div>
+
+  <div class="sec-hdr">Aufgaben</div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 1: Ziffern-Passwörter<span class="sterne s1">★</span></div>
+    <div class="auf-body">
+      Ein Passwort besteht nur aus Ziffern (0–9).
+      <div class="teil"><span class="tn">a)</span><span>Wie viele verschiedene 4-stellige Passwörter gibt es? <span class="ln" style="min-width:80px;"></span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>Wie viele 8-stellige? Berechne als Potenz und als gerundete Zahl: <span class="ln" style="min-width:100px;"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>PIN-Codes sind meist 4-stellige Ziffernpasswörter. Wie sicher sind sie? Nimm an, ein Angreifer probiert 1 Code pro Sekunde. Wie lange dauert es <em>maximal</em>? <span class="ln" style="min-width:80px;"></span></span></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 2: Zeichenvorrat vergrößern<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      Ziffern: 10 &nbsp;|&nbsp; Kleinbuchstaben: 26 &nbsp;|&nbsp; Großbuchstaben: 26 &nbsp;|&nbsp; Sonderzeichen: 10
+      <div class="tipp-box">Jedes Zeichen wird unabhängig gewählt → Zählprinzip: Anzahl = (Zeichenvorrat)^(Länge)</div>
+      <div class="teil"><span class="tn">a)</span><span>Passwort der Länge 8, nur Ziffern + Kleinbuchstaben: Zeichenvorrat = <span class="ln" style="min-width:40px;"></span> → Anzahl = <span class="ln" style="min-width:80px;"></span></span></div>
+      <div class="teil"><span class="tn">b)</span><span>+ Großbuchstaben dazu: Zeichenvorrat = <span class="ln" style="min-width:40px;"></span> → Anzahl = <span class="ln" style="min-width:80px;"></span></span></div>
+      <div class="teil"><span class="tn">c)</span><span>+ Sonderzeichen dazu: Zeichenvorrat = <span class="ln" style="min-width:40px;"></span> → Anzahl = <span class="ln" style="min-width:80px;"></span></span></div>
+      <div class="teil"><span class="tn">d)</span><span>Vervollständige die Tabelle:</span></div>
+      <table class="mt-tbl" style="margin-top:8px;">
+        <thead><tr><th>Zeichenvorrat</th><th>Anzahl Passwörter</th><th>Faktor Zugewinn</th><th>Zeit bei 1/ms</th></tr></thead>
+        <tbody>
+          <tr><td>Ziffern (10)</td><td class="fill">10⁸ ≈ 10⁸</td><td class="fill">—</td><td class="fill">2 min</td></tr>
+          <tr><td>+ Kleinbst. (36)</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+          <tr><td>+ Großbst. (62)</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+          <tr><td>+ Sonderz. (72)</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="qr-box" id="qr_k32_1_tipp">
+  <div id="qr_qr_k32_1_tipp" style="width:56px;height:56px;overflow:hidden;font-size:0;" title="https://mathtastic.github.io/mathe/K3-2_Passwortsicherheit.html#tipp"><canvas width="56" height="56" style="display: none;"></canvas><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAGkklEQVR4AdzXbXKUtxZFYYphwPyHxjiIH5VX10Z5jfnt1F13f5wjgdwNqXz/8ePH74/4/f7PPX+vX2Je4CHTKN9qrgMPHnzIoePpZ3z/9vbPr1+/vt281X/8r3nlz58/s+ds2Z5Bma/j9TKVwYNvVtZBDnlx5qb5eaDQYSrf1LvIjOpQpmEe7TSTzco85HumMwv5Cedi568Hbnl7l+u6INVDNgd/d3ro0/bq9CinOrs0dlb3kf7TAx12aZQp9H4TkKGjYQaZ7lzW15V1UddO/Wf6eqCDcR9yOfTUHl3M9NDLiz70dkJG2R5PYUZ1/BPmsfPzQAdvdol32M6qHjqK3ZEXs/Ke4c1o87+p3Z3LN82/u/QjWqIuoLC/WbeYtcM30+WpDB7trq5vd5X/G+cTdPlX5fVAP6nwWJ4uflKbb/90ph2zqEv17g59npap3SfMcM++VxguLm7GQ25Hzq/qce/q0K551Mvmm+tSM9hbdq63g/NnUAEFLEMHHnzIdpFvRvUU5vTGDvR21pfr2kn1oeNpOI/XV9SCAjxapmVz6KKZbAY+zOt4mOlC/oj2m8vOlemddThf0T2Q3wN1NBy2g7wZT+tl6Ojd67BzHnajnbK5LuSn2fmKGljAHpBRZy/0obNDdVQOOczr+TDXyxQ8+EVnP5rp18vnK8q0TO9c57AZdFFPF3uo452RebqYQUdDti/zVF7qKezgPFDxVTl/Br3UA/1EqMyHLszyO69P27nVGd3TXjNzyPG0r4Ndane9fD5BxiBkB0I2+/X+H8b8TTv1m/Pua75692Ua3UGh7w6+jtbT88AWFBY2656wV59P9e6gT5jZpeDb41Gmsj0+1ck3zevP36KCAXisl0Mf2/H6/YXlMDeT+ZSHGdVDjju3R2HPTp7KOJ+gwhJ4rJfhwFO/s6edzpjZLVPUm0FHQ7YTeh2Fnm4n4/VAwSIsUt2N3hz3rGwnT2X7kHF7O/V5GZ9lO91nN6//44E74MMhy9CVKfRYL4cz6+0tZnZ0eSrD7EZvB2ZUl6f444GWvhrn34Ne6vU9jl/0sj0+5SFjvRzOLvdeM/tmm3Xy9mUdZLTLx/kEBUPL4Bcd7IFftuNjd57ua97Mue1kmNenuuXuy+eBgovAY72MLjRDmZbtoU4vY70c9c7cnWwOc+igAx8yyuffgw5FAzlPN/PQL13cjKKd9XVU7yxk6EKOp51mT3o+wT1kSV7q6BN29f2GyrrQxd2Vnc/bzdfr1svRLm2HPw9UWFRABh+ynahfvWdlZ9vLm9Xx9XV3rl+1A92q+3Q4f4sqLFAlBR+ynahfbUbtN8tvzzenduLOeh14Z8GDb7ZZdz5B5qty/pLxOC+n8BNZ6uxApiHbv7MO5jCnOp7eNNfziw66Pc9D35zifEUNoKCWF71MYYeGHLq8Myg30/EU5hT8jV3o25F58GZUXl5f0Yb0xgGdS0KXp3I7vC7qN9vRgzfjwYNH87qyGcrNdTzOV1SxSwZyPM13xxz29e+8ZHt7DfT4LDtjL57y3sHbwfmKOli5Xged5TyFDuZlijreDupSHXaHDzNsfvI6e90rx+sTbIEaWuZDt+jtQE/Bhx3I90x3szt82HOPTGWeLmYwi/99gh3YRZ0DVE/L/LI9j+bOyrSOlimednR2wdsLWR/6/OsvmYqvpucruo/y04jt/VS2l5vz+Cg7t3N7sh7y37BjH3m6Z8pps/MVFXbgosUMdfYXM2zHt09l5Hd//e7w6Ez+3t++XYrXJyjs4tMl5nrwT3TPvSPDGdqevF5GO2Z8HQ09ZGo3L+P1Z1CABYuQwes/w5592KUhm6d6PsoU7Zrnn1QXztlfXl9RpUUKyzLkG/O63cmn7VBnwjx0zevKZrHd+ubO6mmcr2jBMHR5F/CpGXQ3dp5munDGXtTTOjuLmbzKh9kT5xPs0ls78NEl2/Ptd48O2+f10b5Z3XqdHd2iQ12exuvPYEtfTc8D/YRunh7ajlk/oVvNPsL5nXW2TubpokMdD/eBRz7VnQcyHabyogs9T1201NEbZ6LZfbae7sw53aJbmtWVXw+s+Ej9gs143JeZ66g5XXRhL3ZHZ0fHo7zKL/ZRx+OfH+gXcmD1vky2Q9uToaN6yFE2jzo7OlpHdTSa11O8HmghDBb9ZpfqKMwo6tPteLvgo+wM/4Rdc2qe8mHOp/x5oOUbwxsHcfflZmk91YHHevnb2//5PejpW/xGQ69L8+X2UnOcBzJflf8AAAD//9Qs0i0AAAAGSURBVAMAnix6HBt7j04AAAAASUVORK5CYII=" style="display: block;"></div>
+  <div style="font-size:7px;color:#888;margin-top:3px;">💡 Tipp</div>
+  <script>new QRCode(document.getElementById("qr_qr_k32_1_tipp"),{text:"https://mathtastic.github.io/mathe/K3-2_Passwortsicherheit.html#tipp",width:56,height:56,colorDark:"#1a1a1a",colorLight:"#ffffff"});</script>
+</div>
+  <div class="seiten-nr">8I · Daten und Zufall · Transfer</div>
+</div>
+
+<div class="page" data-kat="k3">
+  <div class="kat-badge k3">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Wie sicher ist mein Passwort?</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 3: Länge erhöhen<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      Ein Passwort aus Ziffern, Klein- und Großbuchstaben (62 Zeichen).
+      <table class="mt-tbl" style="margin-top:8px;">
+        <thead><tr><th>Länge</th><th>8</th><th>9</th><th>10</th><th>12</th></tr></thead>
+        <tbody>
+          <tr><td>Anzahl</td><td class="fill">62⁸</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+          <tr><td>Faktor mehr als 8-stellig</td><td class="fill">—</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+        </tbody>
+      </table>
+      <div class="teil" style="margin-top:8px;"><span class="tn">a)</span><span>Was hilft mehr — ein Zeichen länger oder einen Zeichentyp mehr hinzufügen? Begründe mit Zahlen.</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 4: Exponentielles Wachstum erkennen<span class="sterne s2">★★</span></div>
+    <div class="auf-body">
+      <div class="teil"><span class="tn">a)</span><span>Wenn man die Passwortlänge um 1 erhöht (bei Zeichenvorrat 10), wird die Anzahl mit <span class="ln" style="min-width:40px;"></span> multipliziert.</span></div>
+      <div class="teil"><span class="tn">b)</span><span>Das ist <strong>exponentielles Wachstum</strong>. Erkläre, warum die Sicherheit so schnell steigt.</span></div>
+      <div class="ll"><div class="l"></div></div>
+      <div class="teil"><span class="tn">c)</span><span>Recherchiere: Wie lang sollte ein sicheres Passwort laut BSI (Bundesamt für Sicherheit) mindestens sein? <span class="ln" style="min-width:80px;"></span></span></div>
+    </div>
+  </div>
+
+  <div class="auf">
+    <div class="auf-label">Aufgabe 5: Eigenes sicheres Passwort<span class="sterne s3">★★★</span></div>
+    <div class="auf-body">
+      <div class="tipp-box">Methode: Nimm einen Satz und bilde aus dem 1. Buchstaben jedes Wortes dein Passwort, ersetze einige durch Ziffern/Sonderzeichen.</div>
+      <div class="teil"><span class="tn">a)</span><span>Erstelle nach dieser Methode ein Passwort (schreibe es aber nicht auf!) und berechne dessen theoretische Anzahl möglicher Passwörter.</span></div>
+      <div class="ll"><div class="l"></div></div>
+      <div class="teil"><span class="tn">b)</span><span>Teste dein Passwort auf <strong>howsecureismypassword.net</strong> — wie lange würde es dauern, es zu knacken?</span></div>
+      <div class="ll"><div class="l"></div></div>
+      <div class="teil"><span class="tn">c)</span><span>Vergleiche mit deiner Berechnung aus a). Stimmt die Größenordnung?</span></div>
+      <div class="ll"><div class="l"></div></div>
+    </div>
+  </div>
+
+  <div class="qr-box" id="qr_k32_2_loe">
+  <div id="qr_qr_k32_2_loe" style="width:56px;height:56px;overflow:hidden;font-size:0;" title="https://mathtastic.github.io/mathe/K3-2_Passwortsicherheit.html#loesung"><canvas width="56" height="56" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
+  <div style="font-size:7px;color:#888;margin-top:3px;">✔ Lösung</div>
+  <script>new QRCode(document.getElementById("qr_qr_k32_2_loe"),{text:"https://mathtastic.github.io/mathe/K3-2_Passwortsicherheit.html#loesung",width:56,height:56,colorDark:"#1a1a1a",colorLight:"#ffffff"});</script>
+</div>
+  <div class="seiten-nr">8I · Daten und Zufall · Transfer</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     LÖSUNGSBLATT — nur für den Lehrer
+     ═══════════════════════════════════════════════════ -->
+
+<div class="page page-loe" id="tipp">
+  <div class="loe-badge">✔ Lösungsblatt</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Passwortsicherheit — Tipp &amp; Lösung</div>
+  <div class="pg-sub">Lösungsblatt · nur für den Lehrer</div>
+
+  <div class="tipp-loe">
+    <strong>💡 Tipps für die Aufgaben:</strong><br><br>
+    <strong>A1:</strong> Jede Stelle hat 10 Möglichkeiten, unabhängig von den anderen → Zählprinzip: 10 · 10 · … = 10ⁿ<br>
+    <strong>A2:</strong> Zeichenvorrat = alle verwendbaren Zeichen zusammengezählt. Bei Länge 8: (Zeichenvorrat)⁸<br>
+    <strong>A3:</strong> Faktor = neue Anzahl ÷ alte Anzahl = 62⁹ ÷ 62⁸ = 62. Allgemein: Faktor = Zeichenvorrat.<br>
+    <strong>A4b:</strong> Jedes Zeichen multipliziert die Anzahl — daher wächst sie exponentiell.<br>
+    <strong>A5:</strong> Website: howsecureismypassword.net — Ergebnisse variieren je nach Annahmen.
+  </div>
+
+  <div class="sec-hdr" id="loesung">Aufgabe 1</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">a)</span><span>10⁴ = <span class="sol">10 000</span></span></div>
+    <div class="teil"><span class="tn">b)</span><span>10⁸ = <span class="sol">100 000 000 ≈ 10⁸</span></span></div>
+    <div class="teil"><span class="tn">c)</span><span>10 000 s ÷ 60 ≈ <span class="sol">167 Minuten ≈ 2,8 Stunden</span></span></div>
+  </div>
+
+  <div class="sec-hdr">Aufgabe 2</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">a)</span><span>36⁸ ≈ <span class="sol">2,8 · 10¹²</span></span></div>
+    <div class="teil"><span class="tn">b)</span><span>62⁸ ≈ <span class="sol">2,2 · 10¹⁴</span></span></div>
+    <div class="teil"><span class="tn">c)</span><span>72⁸ ≈ <span class="sol">7,2 · 10¹⁴</span></span></div>
+  </div>
+  <table class="loe-tbl">
+    <thead><tr><th>Zeichenvorrat</th><th>Anzahl</th><th>Faktor</th><th>Zeit bei 1/ms</th></tr></thead>
+    <tbody>
+      <tr><td>Ziffern (10)</td><td class="sol">10⁸ ≈ 10⁸</td><td>—</td><td class="sol">≈ 2 min</td></tr>
+      <tr><td>+ Kleinbst. (36)</td><td class="sol">≈ 3·10¹²</td><td class="sol">≈ 30 000×</td><td class="sol">≈ 60 s → 1 Std.</td></tr>
+      <tr><td>+ Großbst. (62)</td><td class="sol">≈ 2·10¹⁴</td><td class="sol">≈ 2 Mio.×</td><td class="sol">≈ 1 Std.</td></tr>
+      <tr><td>+ Sonderz. (72)</td><td class="sol">≈ 7·10¹⁴</td><td class="sol">≈ 7 Mio.×</td><td class="sol">≈ 8 Std.</td></tr>
+    </tbody>
+  </table>
+  <div class="loe-hinweis">Kernbotschaft: Jeder neue Zeichentyp multipliziert die Sicherheit enorm — exponentieller Effekt!</div>
+
+  <div class="sec-hdr">Aufgabe 3</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">a)</span><span>62⁹ = 62⁸ · 62 → Faktor <span class="sol">62</span> pro zusätzlichem Zeichen</span></div>
+    <div class="teil"><span class="tn">b)</span><span>Länge erhöhen um 1 → Faktor 62. Zeichentyp (z.B. Kleinbuchstaben) → Faktor (36/10)⁸ ≈ 30 000. <span class="sol">Längenerhöhung ist einfacher, Zeichenvielfalt stärker.</span></span></div>
+  </div>
+
+  <div class="sec-hdr">Aufgabe 4</div>
+  <div class="loe-antwort">
+    <div class="teil"><span class="tn">a)</span><span>Faktor = <span class="sol">10</span></span></div>
+    <div class="teil"><span class="tn">b)</span><span>Jede Stelle multipliziert die Anzahl → exponentielles Wachstum: bereits 2 Stellen mehr = 100× mehr Möglichkeiten.</span></div>
+    <div class="teil"><span class="tn">c)</span><span>BSI empfiehlt: <span class="sol">mindestens 12 Zeichen</span>, besser 16+</span></div>
+  </div>
+  <div class="loe-hinweis">A5 ist bewusst offen — individuelle Passwörter nicht einsammeln! Nur die berechnete Möglichkeitszahl besprechen.</div>
+
+  <div class="seiten-nr">8I · Daten und Zufall · Transfer · Lösungsblatt</div>
+</div>
+
+</body></html>

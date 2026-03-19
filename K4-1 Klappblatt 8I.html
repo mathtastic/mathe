@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/SebastianHofmiller/Downloads/K4-1_Klappblatt.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>K4-1 Klappblatt 8I</title><link href="./K4-1 Klappblatt 8I_files/css2" rel="stylesheet">
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #F0EDE8; font-family: 'Nunito', sans-serif; font-size: 13px; color: #1a1a1a; padding: 30px 20px; -webkit-font-smoothing: antialiased; }
+.page { width: 210mm; min-height: 297mm; background: #fff; margin: 0 auto 40px; padding: 12mm 15mm 10mm; box-shadow: 0 4px 24px rgba(0,0,0,.10); display: flex; flex-direction: column; position: relative; }
+.page-loe { border-top: 5px solid #1A7A50; }
+.page-loe .sec-hdr { border-left-color: #1A7A50; }
+.kat-badge { position: absolute; top: 10mm; right: 15mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; background: #0E7490; display: flex; align-items: center; gap: 5px; }
+.kat-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; background: rgba(255,255,255,0.7); border-radius: 50%; }
+.loe-badge { position: absolute; top: 10mm; right: 15mm; font-family: 'Nunito', sans-serif; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: white; padding: 3px 10px 3px 8px; border-radius: 0 4px 4px 0; background: #1A7A50; }
+.sequenz-badge { font-family: 'Nunito', sans-serif; font-size: 10.5px; font-weight: 700; color: #5A5A5A; text-transform: uppercase; letter-spacing: .10em; text-align: center; margin-bottom: 3px; }
+.pg-title { text-align: center; font-family: 'Lora', serif; font-size: 18px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.pg-sub { text-align: center; font-family: 'Nunito', sans-serif; font-size: 10.5px; color: #0E7490; font-style: italic; margin-bottom: 10px; }
+.datum-row { display: flex; justify-content: flex-end; font-size: 11px; color: #666; margin-bottom: 10px; gap: 6px; }
+.datum-row .ln-d { border-bottom: 1px solid #aaa; display: inline-block; width: 80px; height: 12px; }
+.klasse-tag { font-size: 10px; font-weight: 700; color: #444; border: 1px solid #bbb; border-radius: 20px; padding: 1px 8px; }
+.klapp-header { font-family: 'Lora', serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 5px 8px; border-radius: 4px; text-align: center; }
+.klapp-header.aufg { background: #E6F3F5; color: #0E7490; }
+.klapp-header.loes { background: #E8F5EE; color: #1A7A50; }
+.klapp-row { display: grid; grid-template-columns: 1fr 3px 1fr; border-bottom: 1px solid #EBEBEB; padding: 8px 0; }
+.klapp-row:last-child { border-bottom: none; }
+.klapp-trennlinie { background: repeating-linear-gradient(to bottom, #0E7490 0px, #0E7490 5px, transparent 5px, transparent 10px); margin: 0 6px; }
+.klapp-nr { font-family: 'Lora', serif; font-size: 10px; font-weight: 700; color: #0E7490; margin-bottom: 2px; }
+.klapp-nr.loes { color: #1A7A50; }
+.klapp-text { font-family: 'Nunito', sans-serif; font-size: 11.5px; line-height: 1.6; }
+.klapp-sol { font-family: 'Nunito', sans-serif; font-size: 11.5px; line-height: 1.6; color: #0D5C35; font-weight: 600; }
+.b { display: inline-flex; flex-direction: column; align-items: stretch; vertical-align: middle; line-height: 1.2; margin: 0 2px; font-size: 0.88em; text-align: center; }
+.b .z { border-bottom: 1.3px solid currentColor; padding: 1px 3px 1px; display: block; white-space: nowrap; width: 100%; box-sizing: border-box; }
+.b .n { padding: 1px 3px 0; display: block; white-space: nowrap; width: 100%; box-sizing: border-box; }
+.sec-hdr { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: #1a1a1a; margin: 16px 0 9px; padding: 4px 0 4px 10px; border-left: 4px solid #1A7A50; border-bottom: 1px solid #E0DDD5; }
+.loe-antwort { background: #E8F5EE; border: 1.5px solid #1A7A50; border-radius: 5px; padding: 8px 12px; margin: 5px 0; font-family: 'Nunito', sans-serif; font-size: 12px; line-height: 1.7; }
+.loe-antwort .sol { font-weight: 700; color: #0D5C35; }
+.loe-hinweis { font-family: 'Lora', serif; font-size: 11px; font-style: italic; color: #555; border-left: 3px solid #A8D4B8; padding-left: 9px; margin: 6px 0 0; line-height: 1.6; }
+.seiten-nr { font-family: 'Nunito', sans-serif; font-size: 9px; color: #bbb; text-align: center; margin-top: auto; padding-top: 8px; }
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  body { background: white !important; padding: 0 !important; margin: 0 !important; }
+  .page { box-shadow: none !important; margin: 0 !important; page-break-after: always !important; break-after: page !important; width: 210mm !important; height: 297mm !important; min-height: 0 !important; overflow: hidden !important; padding: 10mm 14mm 8mm !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}</style>
+</head>
+<body>
+<div class="page" data-kat="k4">
+  <div class="kat-badge">LB 5 · Daten und Zufall</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Klappblatt — Basiswissen</div>
+  <div class="pg-sub">Falte entlang der Mittellinie · Aufgaben links · Lösungen rechts verdeckt</div>
+  <div class="datum-row"><span>Datum</span><span class="ln-d"></span><span class="klasse-tag">Mathematik · 8I</span></div>
+
+  <div style="display:grid;grid-template-columns:1fr 3px 1fr;gap:0;margin-bottom:6px;">
+    <div><div class="klapp-header aufg">✍️&nbsp; Aufgabe</div></div>
+    <div></div>
+    <div><div class="klapp-header loes">✔&nbsp; Lösung</div></div>
+  </div>
+
+  <div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 1</div>
+        <div class="klapp-text">Was ist ein Zufallsexperiment?<br>Nenne ein Beispiel.</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 1</div>
+        <div class="klapp-sol">Vorgang mit nicht vorhersagbarem Ausgang.<br><em>z.B. Würfelwurf, Münzwurf</em></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 2</div>
+        <div class="klapp-text">Ω = {1,2,3,4,5,6}<br>E = {2,4,6}<br>Berechne P(E).</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 2</div>
+        <div class="klapp-sol"><span class="b"><span class="z">3</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span> = 0,5</div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 3</div>
+        <div class="klapp-text">Was ist das Gegenereignis von E?<br>Wie berechnet man P(Ē)?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 3</div>
+        <div class="klapp-sol">Ē = alle Ergebnisse, die nicht in E liegen.<br>P(Ē) = 1 − P(E)</div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 4</div>
+        <div class="klapp-text">P(E) = 0,3. Berechne P(Ē).</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 4</div>
+        <div class="klapp-sol">P(Ē) = 1 − 0,3 = <b>0,7</b></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 5</div>
+        <div class="klapp-text">Erkläre die 1. Pfadregel<br>mit einem Beispiel.</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 5</div>
+        <div class="klapp-sol">P(Pfad) = Produkt der Einzelwahrscheinlichkeiten.<br><span class="b"><span class="z">1</span><span class="n">2</span></span> · <span class="b"><span class="z">1</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">12</span></span></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 6</div>
+        <div class="klapp-text">Erkläre die 2. Pfadregel<br>mit einem Beispiel.</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 6</div>
+        <div class="klapp-sol">P(E) = Summe günstiger Pfade.<br>P(K,Z) + P(Z,K) = <span class="b"><span class="z">1</span><span class="n">4</span></span> + <span class="b"><span class="z">1</span><span class="n">4</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 7</div>
+        <div class="klapp-text">Münze 2×. Berechne<br>P(genau 1 Kopf).</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 7</div>
+        <div class="klapp-sol">P(K,Z) + P(Z,K) = <span class="b"><span class="z">1</span><span class="n">4</span></span> + <span class="b"><span class="z">1</span><span class="n">4</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 8</div>
+        <div class="klapp-text">Was bedeutet „ohne Zurücklegen“?<br>Was ändert sich im Baum?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 8</div>
+        <div class="klapp-sol">Gezogenes Element kommt nicht zurück →<br>2. Stufe hat eine Möglichkeit weniger.</div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 9</div>
+        <div class="klapp-text">Beutel: 3R, 2B mit ZL.<br>P(R, dann B) = ?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 9</div>
+        <div class="klapp-sol"><span class="b"><span class="z">3</span><span class="n">5</span></span> · <span class="b"><span class="z">2</span><span class="n">5</span></span> = <span class="b"><span class="z">6</span><span class="n">25</span></span></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 10</div>
+        <div class="klapp-text">Was bedeutet stochastische<br>Unabhängigkeit von A und B?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 10</div>
+        <div class="klapp-sol">P(A|B) = P(A)<br>bzw. P(A∩B) = P(A) · P(B)</div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 11</div>
+        <div class="klapp-text">P(A) = 0,4 &nbsp; P(B) = 0,5<br>A und B unabhängig.<br>P(A∩B) = ?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 11</div>
+        <div class="klapp-sol">0,4 · 0,5 = <b>0,20</b></div>
+      </div>
+    </div><div class="klapp-row">
+      <div style="padding-right:10px;">
+        <div class="klapp-nr">A 12</div>
+        <div class="klapp-text">Was ist die Laplace-Wahrscheinlichkeit?<br>Wann gilt sie?</div>
+      </div>
+      <div class="klapp-trennlinie"></div>
+      <div style="padding-left:10px;background:#FAFEF8;">
+        <div class="klapp-nr loes">L 12</div>
+        <div class="klapp-sol">P(E) = <span class="b"><span class="z">|E|</span><span class="n">|Ω|</span></span><br>Gilt wenn alle Ergebnisse gleich wahrscheinlich.</div>
+      </div>
+    </div>
+
+  <div style="text-align:center;font-family:&#39;Nunito&#39;,sans-serif;font-size:9px;color:#0E7490;
+    margin-top:8px;border-top:1px dashed #0E7490;padding-top:5px;">
+    ✂ Hier falten — Lösungen liegen dann hinten
+  </div>
+  <div class="seiten-nr">8I · Daten und Zufall · Klapptest</div>
+</div>
+
+<!-- LOE_SEP -->
+<div class="page page-loe">
+  <div class="loe-badge">✔ Lösungsblatt</div>
+  <div class="sequenz-badge">Daten und Zufall</div>
+  <div class="pg-title">Klappblatt — Lehrerhinweise</div>
+  <div class="pg-sub">Lösungsblatt · nur für den Lehrer</div>
+
+  <div class="loe-antwort" style="margin-bottom:14px;">
+    <strong>Einsatz:</strong> Einzelarbeit oder Partnerarbeit. Blatt falten → Lösung verdeckt →
+    Aufgabe bearbeiten → aufklappen → selbst kontrollieren. Ideal als Vorbereitung auf die Schulaufgabe.
+  </div>
+
+  <div class="sec-hdr">Alle Lösungen</div>
+  <div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A1:</span> <span class="sol">Vorgang mit nicht vorhersagbarem Ausgang.<br><em>z.B. Würfelwurf, Münzwurf</em></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A2:</span> <span class="sol"><span class="b"><span class="z">3</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span> = 0,5</span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A3:</span> <span class="sol">Ē = alle Ergebnisse, die nicht in E liegen.<br>P(Ē) = 1 − P(E)</span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A4:</span> <span class="sol">P(Ē) = 1 − 0,3 = <b>0,7</b></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A5:</span> <span class="sol">P(Pfad) = Produkt der Einzelwahrscheinlichkeiten.<br><span class="b"><span class="z">1</span><span class="n">2</span></span> · <span class="b"><span class="z">1</span><span class="n">6</span></span> = <span class="b"><span class="z">1</span><span class="n">12</span></span></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A6:</span> <span class="sol">P(E) = Summe günstiger Pfade.<br>P(K,Z) + P(Z,K) = <span class="b"><span class="z">1</span><span class="n">4</span></span> + <span class="b"><span class="z">1</span><span class="n">4</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A7:</span> <span class="sol">P(K,Z) + P(Z,K) = <span class="b"><span class="z">1</span><span class="n">4</span></span> + <span class="b"><span class="z">1</span><span class="n">4</span></span> = <span class="b"><span class="z">1</span><span class="n">2</span></span></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A8:</span> <span class="sol">Gezogenes Element kommt nicht zurück →<br>2. Stufe hat eine Möglichkeit weniger.</span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A9:</span> <span class="sol"><span class="b"><span class="z">3</span><span class="n">5</span></span> · <span class="b"><span class="z">2</span><span class="n">5</span></span> = <span class="b"><span class="z">6</span><span class="n">25</span></span></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A10:</span> <span class="sol">P(A|B) = P(A)<br>bzw. P(A∩B) = P(A) · P(B)</span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A11:</span> <span class="sol">0,4 · 0,5 = <b>0,20</b></span></div><div class="loe-antwort" style="margin-bottom:5px;padding:6px 12px;"><span style="font-weight:700;color:#0E7490;">A12:</span> <span class="sol">P(E) = <span class="b"><span class="z">|E|</span><span class="n">|Ω|</span></span><br>Gilt wenn alle Ergebnisse gleich wahrscheinlich.</span></div>
+
+  <div class="loe-hinweis">A1, A3, A8, A10, A12 sind Verständnisfragen (keine Rechnung). A2, A4, A7, A9, A11 sind Rechenaufgaben. A5, A6 prüfen das Regelwissen.</div>
+  <div class="seiten-nr">8I · Daten und Zufall · Klapptest · Lösungsblatt</div>
+</div>
+
+</body></html>
